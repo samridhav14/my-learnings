@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- html is the primary tag of our primary tag it necessariliy contains two child
+head and body tags -->
+<html lang="en">
+  <!--  head is that part of web browser that is not visible on the web page when
+  the page is loaded this is used to give page title or include css files -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- here link element is used to link the css file with html we will use the attribute href and rel -->
+    <!-- we hAve used google fonts for the website so that the problem of having the font installed in the users system is solved -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+
+    <!--  this the title that will be shown for our website -->
+    <title>My Learnings</title>
+  </head>
+  <!--  body tAag is the main tag which will mostly contain all text of the site -->
+  <body>
+    <!-- structuring is very imp such that simillar things will be put together and will 
+      also help in search engine optimization weneed to write right element -->
+    <header>
+      <!-- img is a element with no closing tag we will use attributes to specify what image to put here we will use src attribute  -->
+      <!-- to fix the visual size of the image we will use two more attribute height and width -->
+      <!-- all logo should have an alt tag that is used as text info about the logo  this tag will not change anything as such but 
+    will help screen readers and also search engine optimization -->
+      <img src="logo.png" height="70" width="70" alt="Today I Learned logo" />
+      <!-- h1 is the main heading of the page -->
+
+      <h1>Today I Learned</h1>
+      <button>Share a fact</button>
+    </header>
+    <!-- here form tag is used to create a form from which we can the input using java script  -->
+    <form>
+      <!-- input does not have a closing tag as img tag and its attribute type is used what type od data we will accept -->
+      <input type=" text" placeholder="Share your Learning with us " />
+      <span>200</span>
+      <input
+        type=" text"
+        placeholder="Trustworthy source of this information"
+      />
+      <!-- here select is used for scrolling buttons  -->
+      <select>
+        <!-- option are the diff buttons appear as we click on option -->
+        <option value="">choose category</option>
+        <option value="technology">Technology</option>
+        <option value="science">Science</option>
+        <option value="Finance">Finance</option>
+      </select>
+      <button>Post</button>
+    </form>
+    <!-- we have a list of paragraph so we need to put it in list even if output is same for betterment of code  -->
+    <main>
+      <!-- here aside does not mean it is a side content it basically means that is secondary content altough it is mainly used for side bars -->
+      <aside>
+        <ul>
+          <li>
+            <button>All</button>
+          </li>
+          <li>
+            <button>Technology</button>
+          </li>
+          <li>
+            <button>Science</button>
+          </li>
+          <li>
+            <button>Finance</button>
+          </li>
+        </ul>
+      </aside>
+      <!-- here section element represent section of the page  -->
+      <section>
+        <ul>
+          <!--we can only have li inside ul everything else is not allowed -->
+          <!-- we need to propely write thngs in nested order so that 
+        browser can understand what type of data it is having for example screen readers for blind ppl to navigate the pages  -->
+          <li>
+            <!-- if we are mainly working for texts we will use paragraph tag -->
+            <!-- here we need to make a seprate tag or element for the technology thing if we try another paragraph tag it is not legal and we cant do so
+        because it will change the line so we can use an element span-->
+            <!-- we have used this special attribute of class in paragraph element so that we can seprately design it in css -->
+            <p class="fact">
+              React is being developed by Meta (formerly facebook)
+              <!-- <we will use a or anchor tag for hyperlinks -->
+              <!-- we will post our links in the opening tag in href part this href is known as attribute it is the property of the element -->
+              <!-- now we have used another attribute taget so that the link will open in new tab all the attributes will not be shown on our website 
+          different element have different attribute so if we try the same in p nothing will work-->
+              <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
+              <span class="tag">#technology#</span>
+              <!-- bold is done by b but in html 5 we have a tag strong which will read by the browser as some imp thing and browser will automatically make it bold this will make our code more structural-->
+              <!-- we want to show these buttons in a seprate section as we have sonde in heading aside and main but we do not any specific thing for these buttons so we will use div tag -->
+            </p>
+            <div>
+              <button>👍<strong>12</strong></button>
+              <button>🤯 <strong>15</strong></button>
+              <button>❌ <strong>2</strong></button>
+            </div>
+          </li>
+          <li>
+            <p class="fact">
+              Millennial dads spend 3 times as much time with their kids than
+              their fathers spent with them. In 1982, 43% of fathers had never
+              changed a diaper. Today, that number is down to 3%
+              <a
+                href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                target="_blank"
+                >(Source)</a
+              >
+              <span class="tag">#society#</span>
+            </p>
+            <div>
+              <button>👍 <strong>20</strong></button>
+              <button>🤯<strong>12</strong></button>
+              <button>❌<strong>6</strong></button>
+            </div>
+          </li>
+        </ul>
+        <p class="devname">DEVELOPED BY SAMMY</p>
+      </section>
+    </main>
+  </body>
+</html>

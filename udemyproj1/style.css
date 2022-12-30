@@ -1,0 +1,46 @@
+/* here * denotes the global slector which basically this will work globally on every element but if we have specified something else in the specific element that will override this global slector   */
+/* * {
+  color: #fafaf9;
+} */
+/* here in the bpdy we can use a feature of css that is inheritance it works from parent element to daughter elements if i will give text colors it will get inherited to most of the child class only some property get inherited */
+body {
+  background-color: #292524;
+  color: #fafaf9;
+  font-family: "Sono", sans-serif;
+}
+/* here h1 is a slector where we need to apply css in thiss we will mention the property we are using */
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  /* here two font family are given because due to any mistake in browser if we are not able to load fond from google font we need to use a  default thing thats why we have used two diff */
+  font-family: "Coiny", Arial, sans-serif;
+  color: aquamarine;
+}
+
+form {
+  background-color: #57534e;
+}
+/* here we have used .fact here . is class slector operator and fact is its name */
+.fact {
+  font-size: 20px;
+  line-height: 1.4;
+  /* sans serif is a key word in case we do not want any external font so that our website work in wvery system wheater that system have a specific font or not  */
+  /* font-family: sans-serif; */
+  color: #fafaf9;
+  background-color: #57534e;
+}
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+  color: #fafaf9;
+  background-color: #57534e;
+}
+ul {
+  /* to  remove bullet ponts */
+  list-style: none;
+}
+.devname {
+  color: aquamarine;
+}
