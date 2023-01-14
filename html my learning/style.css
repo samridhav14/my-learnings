@@ -1,12 +1,26 @@
 /* here * denotes the global slector which basically this will work globally on every element but if we have specified something else in the specific element that will override this global slector   */
-/* * {
-  color: #fafaf9;
-} */
+* {
+  /* we are using margin and padding here because from body these two will not get inherited so we write then in global selector w1e set them on zero to eleminate all the default value add our own  */
+  margin: 0;
+  padding: 0;
+  /* we are using box size because we want to set width and height according to ourselves */
+  box-sizing: border-box;
+}
 /* here in the bpdy we can use a feature of css that is inheritance it works from parent element to daughter elements if i will give text colors it will get inherited to most of the child class only some property get inherited */
 body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
+  padding: 40px;
+}
+.header {
+  /* we use margin to create space between elements */
+  margin-bottom: 40px;
+}
+.fact-form {
+  background-color: #57534e;
+  margin-bottom: 40px;
+  padding: 16px 40px;
 }
 /* here h1 is a slector where we need to apply css in thiss we will mention the property we are using */
 h1 {
@@ -17,10 +31,6 @@ h1 {
   font-family: "Coiny", Arial, sans-serif;
   color: aquamarine;
 }
-
-form {
-  background-color: #57534e;
-}
 /* here we have used .fact here . is class slector operator and fact is its name */
 .fact {
   font-size: 20px;
@@ -29,6 +39,17 @@ form {
   /* font-family: sans-serif; */
   color: #fafaf9;
   background-color: #57534e;
+  margin-bottom: 20px;
+  /* we use padding to create space inside the the element or we can say dist of border and text simillar to margin we can add padding to a specific side also right left bottom top etc.*/
+  /* padding-top: 16px;
+  padding-left: 30px;
+  padding-bottom: 16px;
+  padding-right: 30px; */
+  /* we can do padding as abbove but to decrease the amount of code we can give two values to padding directly one will set the left and right padding and the other will set the top and bottom padding */
+  padding: 16px 24px;
+
+  /* we will use border to set the height weidth the design of the border  */
+  /* for example :border: 16px solid red; */
 }
 .tag {
   text-transform: uppercase;

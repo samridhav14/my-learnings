@@ -26,7 +26,7 @@ head and body tags -->
   <body>
     <!-- structuring is very imp such that simillar things will be put together and will 
       also help in search engine optimization weneed to write right element -->
-    <header>
+    <header class="header">
       <!-- img is a element with no closing tag we will use attributes to specify what image to put here we will use src attribute  -->
       <!-- to fix the visual size of the image we will use two more attribute height and width -->
       <!-- all logo should have an alt tag that is used as text info about the logo  this tag will not change anything as such but 
@@ -38,7 +38,7 @@ head and body tags -->
       <button>Share a fact</button>
     </header>
     <!-- here form tag is used to create a form from which we can the input using java script  -->
-    <form>
+    <form class="fact-form">
       <!-- input does not have a closing tag as img tag and its attribute type is used what type od data we will accept -->
       <input type=" text" placeholder="Share your Learning with us " />
       <span>200</span>
@@ -81,12 +81,12 @@ head and body tags -->
           <!--we can only have li inside ul everything else is not allowed -->
           <!-- we need to propely write thngs in nested order so that 
         browser can understand what type of data it is having for example screen readers for blind ppl to navigate the pages  -->
-          <li>
+          <li class="fact">
             <!-- if we are mainly working for texts we will use paragraph tag -->
             <!-- here we need to make a seprate tag or element for the technology thing if we try another paragraph tag it is not legal and we cant do so
         because it will change the line so we can use an element span-->
             <!-- we have used this special attribute of class in paragraph element so that we can seprately design it in css -->
-            <p class="fact">
+            <p>
               React is being developed by Meta (formerly facebook)
               <!-- <we will use a or anchor tag for hyperlinks -->
               <!-- we will post our links in the opening tag in href part this href is known as attribute it is the property of the element -->
@@ -103,8 +103,8 @@ head and body tags -->
               <button>❌ <strong>2</strong></button>
             </div>
           </li>
-          <li>
-            <p class="fact">
+          <li class="fact">
+            <p>
               Millennial dads spend 3 times as much time with their kids than
               their fathers spent with them. In 1982, 43% of fathers had never
               changed a diaper. Today, that number is down to 3%
