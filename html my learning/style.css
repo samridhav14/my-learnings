@@ -67,6 +67,9 @@ h1 {
   /* margin: 50px here margin and back colour only use the amount of area it needs same is true for padding*/
   /* we can change a inline element to a block element by using display */
   /* display: block; */
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 ul {
   /* to  remove bullet ponts */
