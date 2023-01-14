@@ -21,6 +21,7 @@ body {
   background-color: #57534e;
   margin-bottom: 40px;
   padding: 16px 40px;
+  text-align: center;
 }
 /* here h1 is a slector where we need to apply css in thiss we will mention the property we are using */
 h1 {
@@ -30,6 +31,10 @@ h1 {
   /* here two font family are given because due to any mistake in browser if we are not able to load fond from google font we need to use a  default thing thats why we have used two diff */
   font-family: "Coiny", Arial, sans-serif;
   color: aquamarine;
+  /* block level element: it is a kind of element that uses full space that is available whereas in case of inline element space used is minimum that the element need for ex span */
+  /* background-color: red; */
+  /* we can use text align to alingn the text in a box but it will have no effect in case of inline*/
+  text-align: center;
 }
 /* here we have used .fact here . is class slector operator and fact is its name */
 .fact {
@@ -57,6 +62,11 @@ h1 {
   font-family: "Coiny", sans-serif;
   color: #fafaf9;
   background-color: #57534e;
+  /* example for a inline element  */
+  /* background-colour: red */
+  /* margin: 50px here margin and back colour only use the amount of area it needs same is true for padding*/
+  /* we can change a inline element to a block element by using display */
+  /* display: block; */
 }
 ul {
   /* to  remove bullet ponts */
