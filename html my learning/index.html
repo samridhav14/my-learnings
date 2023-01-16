@@ -31,10 +31,13 @@ head and body tags -->
       <!-- to fix the visual size of the image we will use two more attribute height and width -->
       <!-- all logo should have an alt tag that is used as text info about the logo  this tag will not change anything as such but 
     will help screen readers and also search engine optimization -->
-      <img src="logo.png" height="70" width="70" alt="Today I Learned logo" />
-      <!-- h1 is the main heading of the page -->
+      <!-- we will use a div tag to put logo and header in a single thing(box) div is the simplest thing used to put two things together without any speacial meaning is using div tag  -->
+      <div class="logo">
+        <img src="logo.png" height="70" width="70" alt="Today I Learned logo" />
+        <!-- h1 is the main heading of the page -->
+        <h1>Today I Learned</h1>
+      </div>
 
-      <h1>Today I Learned</h1>
       <button>Share a fact</button>
     </header>
     <!-- here form tag is used to create a form from which we can the input using java script  -->

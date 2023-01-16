@@ -16,6 +16,11 @@ body {
 .header {
   /* we use margin to create space between elements */
   margin-bottom: 40px;
+  /* the header here is the flex container  and the children tags are the flex items in this case a div and a button*/
+  background-color: red;
+  display: flex;
+  /* now we will allign then so that it wount appear diff  and the element is now centred vertically*/
+  align-items: center;
 }
 .fact-form {
   background-color: #57534e;
